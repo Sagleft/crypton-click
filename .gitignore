@@ -1,0 +1,7 @@
+/composer.lock
+/vendor/**
+/view/cache/**
+/logs/**
+.env
+.htaccess
+*.bak
