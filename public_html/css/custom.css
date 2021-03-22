@@ -15,3 +15,25 @@
 .text-center {
 	text-align: center;
 }
+
+.main-gradient {
+	background: rgb(147,93,206)!important;
+	background: linear-gradient(90deg, rgb(147,93,206) 0%, rgb(170,50,185) 100%)!important;
+	border-bottom: 5px solid rgb(255 255 255 / 17%);
+}
+
+.uk-logo {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+.uk-logo:focus, .uk-logo:hover, .btn-stylized:hover {
+	color: #e286ff;
+}
+
+.btn-stylized {
+	color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
