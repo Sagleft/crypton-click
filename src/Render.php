@@ -20,6 +20,6 @@
 				'cache'       => __DIR__ . '/../view/cache',
 				'auto_reload' => getenv('auto_reload')
 			]);
-			exit($twig->render('page.tmpl', $this->data_wrap));
+			exit($twig->render('page.html', $this->data_wrap));
 		}
 	}
