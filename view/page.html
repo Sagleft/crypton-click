@@ -4,9 +4,6 @@
 	<body>
 		<div class="white-wrap">
 			{% include 'parts/navbar.html' %}
-			{% if page.tag == 'home' %}
-				{% include 'parts/main/promo.html' %}
-			{% endif %}
 			<div class="uk-container uk-padding">
 				{% include 'pages/'~page.tag~'.html' %}
 			</div>
