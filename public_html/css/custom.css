@@ -1,3 +1,8 @@
+body {
+	background-color: #f9f9f9;
+	min-height: 100vh;
+}
+
 .github-btn {
 	position: relative;
 	top: 5px;
@@ -9,7 +14,7 @@
 }
 
 .white-wrap {
-	background: white;
+	/*background: white;*/
 }
 
 .text-center {
