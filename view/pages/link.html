@@ -1,0 +1,20 @@
+<input type="hidden" id="linkValue" value="{{ page.link.id }}" />
+<input type="hidden" id="linkType" value="{{ page.link.type }}" />
+
+<h1>
+	<span uk-icon="icon: happy; ratio: 1.8" style="position: relative; bottom: 4px;"></span>
+	<span>Welcome to Utopia</span>
+</h1>
+<h4 class="uk-margin-small-top">Your link will open in 3 seconds,<br/>if this did not happen, click the button:</h4>
+<a href="ut://{{ page.link.typedecoded }}?{{ page.link.id }}" class="uk-button uk-button-default main-gradient btn-stylized">open</a>
+
+<hr/>
+
+<!--<h4 class="uk-margin-small-top">If you want to go to the main page of this service:</h4>
+<a href="/" class="uk-button uk-button-default main-gradient btn-stylized">home</a>-->
+
+<h4 class="uk-margin-small-top">Does not open? You may not have installed Utopia yet</h4>
+<p>Let's do it, it won't take long.</p>
+
+<!-- scripts -->
+<script src="/js/app.js?v={{ version }}"></script>

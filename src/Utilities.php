@@ -17,7 +17,7 @@
 			return $string;
 		}
 
-		public static function cURL($url, $ref, $header, $cookie, $p=null){
+		public static function cURL($url, $ref, $header, $cookie, $p=null) {
 			$curlDefault = true;
 			if($curlDefault) {
 				$ch =  curl_init();
