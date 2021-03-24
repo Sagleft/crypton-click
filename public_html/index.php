@@ -21,5 +21,9 @@
 	$handler->render([
 		'tag'   => 'home',
 		'title' => 'CryptonClick',
-		'user'  => $handler->user->data
+		'user'  => $handler->user->data,
+		'link'  => [
+			'id'   => $channelID,
+			'type' => $actionType
+		]
 	]);
