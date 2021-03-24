@@ -3,15 +3,21 @@
 		<span uk-icon="icon: info; ratio: 1.8" style="position: relative; bottom: 4px;"></span>
 		<span>An error has occurred</span>
 	</h1>
-	{% if page.code == 404 %}
-		<h4 class="uk-margin-small-top">The requested page was not found.<br/>It looks like you are using an outdated link</h4>
-	{% elseif page.code == 500 %}
-		<h4 class="uk-margin-small-top">Some kind of error has occurred on the server.<br/>Perhaps our developers will fix it a little later.</h4>
-	{% elseif page.code == 403 %}
-		<h4 class="uk-margin-small-top">Access is denied. We are sorry, this section is available only to the administration.</h4>
-	{% else %}
-		<h4 class="uk-margin-small-top">No information on this error</h4>
-	{% endif %}
+	<h4 class="uk-margin-small-top">
+		{% if page.code == 404 %}
+			<span>The requested page was not found.<br/>It looks like you are using an outdated link</span>
+		{% elseif page.code == 500 %}
+			<span>Some kind of error has occurred on the server.<br/>Perhaps our developers will fix it a little later.</span>
+		{% elseif page.code == 403 %}
+			<span>Access is denied. We are sorry, this section is available only to the administration.</span>
+		{% elseif page.code == 1000 %}
+			<span>Invalid request type. There is an error in the link you followed</span>
+		{% elseif page.code == 1001 %}
+			<span>Channel ID not set, it is not clear where to redirect you</span>
+		{% else %}
+			<span>No information on this error</h4>
+		{% endif %}
+	</h4>
 
 	<a href="/" class="uk-button uk-button-default main-gradient btn-stylized">home</a>
 </div>
