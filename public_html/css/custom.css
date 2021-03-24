@@ -38,3 +38,8 @@ body {
     font-weight: bold;
     border-radius: 5px;
 }
+
+.icon-link {
+	text-decoration: none;
+	margin-right: 10px;
+}
