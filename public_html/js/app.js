@@ -24,3 +24,7 @@ function findAndOpenUTLink() {
 if(getUTLinkValue() != "") {
     setTimeout(findAndOpenUTLink, 2500);
 }
+
+function targetEvent() {
+    ym(80427994,'reachGoal','getclient');
+}
